@@ -34,7 +34,7 @@ int main()
 	return 0;
 }
 
-excute ( char*arglist[])
+execute ( char*arglist[])
 {
 	int pid, exitstatus;
 	pid = fork();
@@ -57,9 +57,9 @@ excute ( char*arglist[])
 
 char *makestring(char* buf)
 {
-	char *cp, malloc();
+	char *cp;
 	buf[strlen(buf)-1] = '\0';
-	cp =(char*) malloc(strlen(buf)+1);
+	cp = malloc(strlen(buf)+1);
 	if(cp == NULL)
 	{
 		fprintf(stderr,"no memory\n");
