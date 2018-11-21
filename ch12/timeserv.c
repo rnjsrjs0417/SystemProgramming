@@ -11,7 +11,7 @@
 #define HOSTLEN 256
 #define oops(msg) { perror(msg); exit(1);}
 #define h_addr h_addr_list[0]
-
+/*
 struct hostent {
 	char*h_name;
 	char**h_aliases;
@@ -24,18 +24,18 @@ struct hostent {
 struct sockaddr{
 	unsigned short sa_family;
 	char sa_data[14];
-}
+};
 
 struct in_addr{
 	unsigned long s_addr;
-}
+};
 
 struct sockaddr_in{
 	unsigned short sin_family;
 	unsigned short sin_port;
 	struct in_addr sin_addr;
 	char sin_zero[8];
-}
+};*/
 
 int main(int ac, char* av[])
 {
